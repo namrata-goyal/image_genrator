@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapcraft - Image Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container text-center">
+            <h1 class="display-4">✧Snapcraft</h1>
+            <p class="lead">Generate stunning images based on your favorite categories.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <div class="card d-flex flex-md-row">
+                    <div class="col-md-6 p-0">
+                        <img src="https://i.pinimg.com/474x/b6/f6/5a/b6f65a02fa911c4bbcde3e358e7be49e.jpg" alt="Print Designs" class="card-img">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Print Designs</h5>
+                            <p class="card-text">Generate beautiful print designs for posters, wallpapers, and more. Explore a variety of patterns and colors to suit your style.</p>
+                            <a href="{{ url_for('generate_image', category='Print Designs') }}" class="btn btn-primary">Generate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <div class="card d-flex flex-md-row">
+                    <div class="col-md-6 p-0">
+                        <img src="https://i.pinimg.com/474x/b9/39/46/b93946d549fc24912dfebb6ea5eeae2c.jpg" alt="Dresses" class="card-img">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Dresses</h5>
+                            <p class="card-text">Generate stunning dress images for every occasion. Discover designs for casual wear, formal events, and everything in between. Add removable stickers to your dresses for a fun and customizable fashion experience</p>
+                            <a href="{{ url_for('generate_image', category='Dresses') }}" class="btn btn-primary">Generate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <div class="card d-flex flex-md-row">
+                    <div class="col-md-6 p-0">
+                        <img src="https://i.pinimg.com/474x/c3/6a/7e/c36a7ec1e699ab9c468f3d74611cd17d.jpg" alt="Sticker Collection" class="card-img">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Sticker Collection</h5>
+                            <p class="card-text">Generate a collection of fun and creative removable stickers that can be easily added or removed from your clothes. Enjoy customizing your outfits and reducing overproduction with reusable stickers.</p>
+                            <a href="{{ url_for('generate_image', category='Sticker Collection') }}" class="btn btn-primary">Generate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
